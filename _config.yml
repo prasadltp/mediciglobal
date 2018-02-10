@@ -148,7 +148,7 @@ baseurl:
 url: 
 MEDICIURL: 
 twitter_username: 
-github_username: privenbark
+github_username: prasadltp
 markdown: kramdown
 plugins:
 - jekyll-paginate
