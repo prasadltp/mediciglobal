@@ -1,0 +1,19 @@
+---
+title: 2C2P
+date: 2017-12-06 17:50:00 Z
+tags:
+- Lending
+- P2P Lending
+Image: https://s3-us-west-2.amazonaws.com/medici-prod/companies/images/000/000/003/original/2c2p.com.png?1486993668
+URL: http://2c2p.com
+Twitter: trythe4thWay
+Founders: Aung Kyaw Moe
+Markets:
+- Singapore
+- Asia
+Topics:
+- Lending
+Status: Active
+---
+
+2C2P provides payment solutions satisfying the needs of financial institutions, e-commerce and m-commerce merchants and consumers in Asia.

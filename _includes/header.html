@@ -1,0 +1,48 @@
+{% assign banners = site.banners | where: "Is Active" , "true" %}
+{% for banner in banners limit:1 %}
+<div class="banner">
+	{{ banner.content | markdownify }}
+</div>
+{% endfor %}
+<header class="gbl">
+  <div class="inner">
+  
+  <!-- logo -->
+  <h1 class="logo"><a href="{{ site.baseurl }}/">{{ site.title }}</a></h1>  
+  
+  {% assign title = page.title %}
+  
+  {% for page in site.pages %}
+  {% if page.title == 'Navigation' %}
+  <div class="navigation">
+      <a href="#" class="c-hamburger c-hamburger--htx"><span></span></a>
+  <nav>
+    <ul>
+    {% for section in page.Navigation %}
+      <li class="primary {% if title == section.Section %}active{% endif %}"><a href="{{section.URL}}">{{ section.Section }} </a>
+        {% for page in section.Pages %}
+        {% if forloop.first == true %}<i class="nav-click"></i><ul class="nav-submenu">{% endif %}
+        	<li><a href="{{page.URL}}">{{page.Page}}</a></li>
+        {% if forloop.last == true %}</ul>{% endif %}
+        {% endfor %}
+      </li>
+    {% endfor %}
+    </ul>
+    <div class="m-social">
+        <a href="https://www.linkedin.com/company/lets-talk-payments/"><img src="/assets/images/linkedin-white.svg" alt=""></a>
+        <a href="https://www.facebook.com/LetsTalkPayments/"><img src="/assets/images/facebook-white.svg" alt=""></a>
+        <a href="https://twitter.com/LetsTalkPaymnts"><img src="/assets/images/twitter-white.svg" alt=""></a>
+    </div>
+  </nav>
+  <div class="social-nav">
+      <a href="https://www.linkedin.com/company/lets-talk-payments/" target="_blank"><img src="/assets/images/linkedin.svg" alt=""></a>
+      <a href="https://www.facebook.com/LetsTalkPayments/" target="_blank"><img src="/assets/images/facebook.svg" alt=""></a>
+      <a href="https://twitter.com/LetsTalkPaymnts" target="_blank"><img src="/assets/images/twitter.svg" alt=""></a>
+      <a href="{{site.MEDICIURL}}users/sign_in" target="_blank"><span>Member Login</span></a>
+    </div>
+  </div> 
+  {% endif %}
+  {% endfor %}
+
+  </div>
+</header>

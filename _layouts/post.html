@@ -1,0 +1,49 @@
+---
+layout: default
+class: article
+---
+
+{% assign topic = site.topics | where: 'title', page.Topics | first %}
+{% assign author = site.person | where: 'title', page.Person | first %}
+{% assign contributor = author | where: page['Is MEDICI Team?'], false %}
+<article class="article {% if contributor %}contributor{% endif %}">
+	<header>
+		<h4><a href="{{ topic.url }}">{{ page.Topics | first }}</a></h4>
+		<h1>{{page.title}}</h1>
+		<p class="byline">by {% if author.Image %} <img style="width:25px;height:25px;border-radius:50%;" src="{{author.Image}}" /> {% endif %} <a href="{{author.url}}">{{author.title}}</a> &middot; {{page.date | date: "%B %e, %Y"}}</p>
+		{{ page.description }}
+		<a data-sumome-share-id="c81b4728-74a4-4bba-bbd2-f129eeac6eff"></a>
+	</header>
+  
+	<section class="body">
+	  <figure class="image">
+		{% if page.Image %}
+			<div class="image" style="background-image: url('{{page.Image}}'),url('/uploads/MEDICI_default.jpg');"></div>
+		{% else %}
+			<div class="image" style="background-image: url('/uploads/MEDICI_default.jpg');"></div>		
+		{% endif %}
+	  </figure>
+	  {{ page.content}}
+	  
+	  <footer class="bio">
+	  	<figure class="image">
+	  		<div class="image" style="background-image: url({{author.Image}});"></div>
+	  	</figure>
+	  	<div class="body">
+  			<h2><a href="{{author.url}}">{{ author.title }}</a></h2>
+  	  	{{ author.content | markdownify }}
+		  </div>
+		  
+	  </footer>
+	  <p class="more">{% if author['Is MEDICI Team?'] == true %}{% else %}<a href="/contribute" class="contribute">Apply to Become a Contributor</a>{% endif %}</p> 
+
+		{% for tag in page.tags %}		  
+		  	{% if forloop.first == true %}<div class="tag-cloud-body">{% endif %}
+				<a href="#">{{tag}}</a>	
+			{% if forloop.last == true %}</div>{% endif %}
+		{% endfor %}
+	</section>
+	
+	{% include_cached sidebar.html %}
+  
+</article>

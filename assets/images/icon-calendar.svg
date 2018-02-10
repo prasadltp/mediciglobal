@@ -1,0 +1,32 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-calendar</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav" transform="translate(-31.000000, -223.000000)">
+            <rect id="Rectangle-4" fill="#F9FAFA" x="0" y="0" width="260" height="900"></rect>
+            <g id="Group-5" transform="translate(32.000000, 100.000000)" fill="#C93A26">
+                <g id="Group-10" transform="translate(0.000000, 124.000000)">
+                    <path d="M11.8181818,1.23809524 L10.0454545,1.23809524 L10.0454545,0 L8.86363636,0 L8.86363636,3.71428571 L10.0454545,3.71428571 L10.0454545,2.47619048 L11.8181818,2.47619048 L11.8181818,11.7619048 L1.18181818,11.7619048 L1.18181818,2.47619048 L2.36363636,2.47619048 L2.36363636,1.23809524 L1.18181818,1.23809524 C0.529454545,1.23809524 0,1.7927619 0,2.47619048 L0,11.7619048 C0,12.4453333 0.529454545,13 1.18181818,13 L11.8181818,13 C12.4705455,13 13,12.4453333 13,11.7619048 L13,2.47619048 C13,1.7927619 12.4705455,1.23809524 11.8181818,1.23809524" id="Fill-1704"></path>
+                    <polygon id="Fill-1705" points="4.13636364 2.47619048 8.27272727 2.47619048 8.27272727 1.23809524 4.13636364 1.23809524 4.13636364 0 2.95454545 0 2.95454545 3.71428571 4.13636364 3.71428571"></polygon>
+                    <polygon id="Fill-1706" points="4.72727273 4.95238095 2.36363636 4.95238095 2.36363636 7.42857143 4.72727273 7.42857143"></polygon>
+                    <polygon id="Fill-1707" points="7.68181818 4.95238095 5.31818182 4.95238095 5.31818182 7.42857143 7.68181818 7.42857143"></polygon>
+                    <polygon id="Fill-1708" points="8.27272727 7.42857143 10.6363636 7.42857143 10.6363636 4.95238095 8.27272727 4.95238095"></polygon>
+                    <polygon id="Fill-1709" points="2.36363636 10.5238095 4.72727273 10.5238095 4.72727273 8.04761905 2.36363636 8.04761905"></polygon>
+                    <polygon id="Fill-1710" points="5.31818182 10.5238095 7.68181818 10.5238095 7.68181818 8.04761905 5.31818182 8.04761905"></polygon>
+                </g>
+            </g>
+            <g id="Group" transform="translate(10.000000, 93.000000)"></g>
+            <g id="Group-4" transform="translate(10.000000, 144.750000)" font-weight="400" font-size="14" font-family="FaktPro-Medium, Fakt Pro" letter-spacing="-0.043555554" fill="#4A4A4A">
+                <g id="nav" transform="translate(0.000000, 74.500000)">
+                    <text id="Link">
+                        <tspan x="46" y="16.5">Events</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="Group-5" transform="translate(1.000000, -122.000000)"></g>
+    </g>
+</svg>

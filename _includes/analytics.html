@@ -1,0 +1,74 @@
+<!-- scripts -->
+<script type="text/javascript" src="{{ "/assets/scripts" | prepend: site.baseurl }}/jquery-2.2.4.min.js"></script>
+<script src="{{ "/assets/scripts" | prepend: site.baseurl }}/jquery.waypoints.min.js"></script>
+<script src="{{ "/assets/scripts" | prepend: site.baseurl }}/sticky.min.js"></script>
+<script type="text/javascript" src="{{ "/assets/scripts" | prepend: site.baseurl }}/plugins.js"></script>
+<script type="text/javascript" src="{{ "/assets/scripts" | prepend: site.baseurl }}/app.js"></script>
+<script src="{{ "/assets/scripts" | prepend: site.baseurl }}/jquery_validate_min.js"></script>
+<script src="{{ "/assets/scripts" | prepend: site.baseurl }}/jquery.cookie.min.js"></script>
+<!-- Global site tag (gtag.js) - Google Analytics -->
+<script async src="https://www.googletagmanager.com/gtag/js?id=UA-37368038-2"></script>
+<script src="//load.sumome.com/" data-sumo-site-id="d33d3b70fee2239e231314f733a7b19219e1f7d8786cfd732a9bb45dc1c3d370" async="async"></script>
+<script>
+$('#Fintech-Modal').removeClass('open');
+$('#Fintech-Modal-Landing').removeClass('open');
+$('body').removeClass('modal-open');
+$('body').addClass('modal-open');
+if ($.cookie('Fintech-Modal-Landing') == null) {
+            // Create expiring cookie, 2 days from now:
+            $.cookie('Fintech-Modal-Landing', 'yes', { expires: 1, path: '/' });
+
+            // Show dialog
+            $('#Fintech-Modal-Landing').addClass('open');      
+        }
+
+$('.js-modal-close').click(function () {
+  $('#Fintech-Modal').removeClass('open');
+  $('#Fintech-Modal-Landing').removeClass('open');
+  $('body').removeClass('modal-open');
+  $("#mc-embedded-subscribe-form")[0].reset();
+});
+
+$( ".target" ).change(function(e) {
+  if(e.target.value != ""){
+    $(this).parent().find('div').remove() 
+  }
+});
+</script>
+<script>
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date());
+  gtag('config', 'UA-37368038-2');
+</script>
+<!-- Facebook Pixel Code -->
+<script>
+  !function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+  n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+  n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+  t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+  document,'script','https://connect.facebook.net/en_US/fbevents.js');
+  fbq('init', '589774774543640'); // Insert your pixel ID here.
+  fbq('track', 'PageView');
+  </script>
+  <noscript><img height="1" width="1" style="display:none"
+  src="https://www.facebook.com/tr?id=589774774543640&ev=PageView&noscript=1"
+  /></noscript>
+  <!-- End Facebook Pixel Code -->
+<script>
+function rescroll(){
+  $('.scrollable-data').show();
+      // hide everything that is out of bound
+  $('.scrollable-data').filter(function(index){
+      console.log($(this).position().top, $(window).height()+$(window).scrollTop());
+      return ($(this).position().top > $(window).height()+$(window).scrollTop());
+  }).hide();
+  
+  }
+  
+  $(window).scroll(function(){
+    rescroll();
+  });
+
+</script>
+  

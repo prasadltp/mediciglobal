@@ -1,0 +1,29 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-profile</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav" transform="translate(-31.000000, -121.000000)">
+            <rect id="Rectangle-4" fill="#F9FAFA" x="0" y="0" width="260" height="900"></rect>
+            <g id="Group-5" transform="translate(32.000000, 100.000000)" fill="#C93A26">
+                <g id="Group-7" transform="translate(1.000000, 24.000000)">
+                    <path d="M10.8,0 L1.2,0 C0.54,0 0,0.5625 0,1.25 L0,8.75 C0,9.4375 0.54,10 1.2,10 L10.8,10 C11.46,10 12,9.4375 12,8.75 L12,1.25 C12,0.5625 11.46,0 10.8,0 L10.8,0 Z M10.8,8.75 L1.2,8.75 L1.2,1.25 L10.8,1.25 L10.8,8.75 Z" id="Fill-1876"></path>
+                    <polygon id="Fill-1877" points="9.6 4.375 7.2 4.375 7.2 5.625 9.6 5.625"></polygon>
+                    <polygon id="Fill-1878" points="9.6 6.25 7.2 6.25 7.2 7.5 9.6 7.5"></polygon>
+                    <path d="M2.4,7.5 C2.4,6.349375 3.0954,5.625 4.2,5.625 C5.3046,5.625 6,6.349375 6,7.5 L2.4,7.5 Z" id="Fill-1879"></path>
+                    <path d="M5.4,3.75 C5.4,4.44 4.8624,5 4.2,5 C3.5376,5 3,4.44 3,3.75 C3,3.06 3.5376,2.5 4.2,2.5 C4.8624,2.5 5.4,3.06 5.4,3.75" id="Fill-1880"></path>
+                </g>
+            </g>
+            <g id="Group" transform="translate(10.000000, 93.000000)" font-weight="400" font-size="14" font-family="FaktPro-Medium, Fakt Pro" letter-spacing="-0.043555554" fill="#4A4A4A">
+                <g id="nav" transform="translate(0.000000, 24.250000)">
+                    <text id="Link">
+                        <tspan x="46" y="16.5">Profile</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="Group-5" transform="translate(1.000000, -20.000000)"></g>
+    </g>
+</svg>

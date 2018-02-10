@@ -1,0 +1,13 @@
+---
+title: Mark Lowenstein
+date: 2017-10-25 01:17:32 +05:30
+Email: 
+Company Title: 
+Company: 
+Image: "/uploads/Default_Person.png"
+Twitter: 
+LinkedIn: 
+Is MEDICI Team?: false
+---
+
+Mark Lowenstein is the Director of Marketing at Merchant Cash and Capital. He is a Guest Contributor at MEDICI

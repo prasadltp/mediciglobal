@@ -1,0 +1,37 @@
+<article class="post{% if forloop.first == true %} first{% endif %}">
+	{% assign author = site.authors | where: 'title', post.Author | first %}	
+  <h4 class="meta"><i class="avatar" style="background-image:url({{ author.Image }});"></i> <a href="{{ author.url }}" class="author">{{ post.Author }}</a> added an article in <a href="/topics/{{ post.Topics | first | slugify }}" class="tag">{{ post.Topics | first }}</a></h4>
+  {% if post.Image %}
+  <figure class="image" style="background-image: url('{{ post.Image }}')">
+    <div class="img">&nbsp;</div>
+    <figcaption></figcaption>
+  </figure>
+  {% endif %}
+  <section class="content">
+    <header>
+      <h1><a href="{{ post.url }}">{{ post.title }}</a></h1>
+    </header>
+    <section class="body">
+    	{% if post.Description %}
+    	  {{ post.Description | markdownify }}
+    	{% else %}
+    	  {{ post.excerpt }}
+    	{% endif %}
+      <p class="more"><a href="{{ post.url }}">Read more</a> &middot; {% include plugin-readtime.html %}</p>
+    </section>
+  </section>
+  <footer>
+  	<ul>
+  		<h4>Related</h4>
+  	  {% assign current_post = post.title %}
+  	  {% assign collection_name = post.Topics | first %}
+  	  {% assign sorted = site.posts | where: 'Topics', collection_name %}
+  	  {% for post in sorted limit:3 %}
+  	    {% if post.title != current_post %}
+  	    <li><a href="{{ post.url }}">{{ post.title }}</a></li>
+  	    {% endif %}
+  	  {% endfor %}
+  	  
+  	</ul>
+  </footer>
+</article>

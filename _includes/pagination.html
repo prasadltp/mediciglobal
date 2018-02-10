@@ -1,0 +1,44 @@
+<!-- Pagination links -->
+{% if paginator.total_pages > 1 %}
+
+{% assign start = paginator.page | minus: 4 %}
+{% assign end = paginator.page | plus: 4 %}
+
+{% if start < 1 %}
+{% assign start = 1 %}
+{% assign end = start | plus: 10 %}
+{% elsif end > paginator.total_pages %}
+{% assign start = paginator.total_pages | minus: 10 %}
+{% assign end = paginator.total_pages %}
+{% endif %}
+
+{% if start < 1 %}
+{% assign start = 1 %}
+{% endif %}
+
+{% if end > paginator.total_pages %}
+{% assign end = paginator.total_pages %}
+{% endif %}
+<div class="pagination">
+{% if paginator.previous_page %}
+<a class="previous" href="{{ paginator.previous_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+</a>
+{% endif %}
+
+{% for page in (start..end) %}
+{% if page == paginator.page %}
+<span class="active">{{ page }}</span>
+{% elsif page == 1 %}
+<a href="{{ site.baseurl }}/">{{ page }}</a>
+{% else %}
+<a href="{{ site.baseurl }}/page{{ page }}">{{ page }}</a>
+{% endif %}
+{% endfor %}
+
+
+{% if paginator.next_page %}
+<a class="next" href="{{ paginator.next_page_path | prepend: site.baseurl | replace: '//', '/' }}">
+</a>
+{% endif %}
+</div>
+{% endif %}

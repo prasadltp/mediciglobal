@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+{% include_cached head.html page=page %}
+{% assign banners = site.banners | where: "Is Active" , "true" %}
+{% assign pageurl_array = page.url | split: "/" %}
+{% assign path = pageurl_array[0] %}
+{% assign collection_url = pageurl_array[1] %}
+{% assign collection_name = page.title %}
+<body class="{{ layout.class | slugify }} {{path}} {{collection_url}} {{ page.title | slugify }} {% for banner in banners limit:1 %}banner-active{% endfor %}">
+{% include_cached header.html %}
+<div class="container">
+<main role="main">
+<div class="layout {{ layout.class | slugify }}">
+{{ content }}
+</div>
+</main>
+</div>
+{% include_cached footer.html %}
+{% include_cached analytics.html %}
+
+</body>
+</html>

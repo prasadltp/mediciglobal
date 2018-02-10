@@ -1,0 +1,162 @@
+---
+title: MEDICI
+timezone: Asia/Kolkata
+collections:
+  banners:
+    title: Banners
+    output: false
+  companies:
+    title: Companies
+    output: true
+  events:
+    title: Events
+    output: true
+  markets:
+    title: Markets
+    output: true
+  person:
+    title: Person
+    output: true
+  posts:
+    title: Posts
+    output: true
+  programs:
+    title: Programs
+    output: true
+  research:
+    title: Research
+    output: true
+  topics:
+    title: Topics
+    output: true
+  uploads:
+    title: Uploads
+    output: true
+defaults:
+- scope:
+    path: ''
+    type: companies
+  values:
+    permalink: "/companies/:title/"
+    layout: company
+    Image: 
+    URL: 
+    Medici URL: 
+    Twitter: 
+    LinkedIn: 
+    Facebook: 
+    Founders: 
+    Markets:
+    - 
+    Topics:
+    - 
+    Industry Segment:
+    - 
+- scope:
+    path: ''
+    type: events
+  values:
+    permalink: "/events/:title/"
+    layout: event
+    Image: 
+    URL: 
+    Start Date: 
+    End Date: 
+    Markets:
+    - 
+    Topics:
+    - 
+    Location: 
+- scope:
+    path: ''
+    type: programs
+  values:
+    permalink: "/programs/:title/"
+    layout: program
+    Image: 
+    Company: 
+    Medici URL: 
+    URL: 
+    Sponsors:
+    - 
+    Twitter: 
+    Hashtag: 
+    Application URL: 
+    Markets:
+    - 
+    Topics:
+    - 
+- scope:
+    path: ''
+    type: research
+  values:
+    permalink: "/research/:title/"
+    layout: research
+    Topics:
+    - 
+    Image: 
+    Published Date: 
+    Price: 
+    Status: 
+    SKU: 
+- scope:
+    path: ''
+    type: person
+  values:
+    permalink: "/person/:title/"
+    layout: person
+    Company Title: 
+    Company: 
+    Image: 
+    Twitter: 
+    LinkedIn: 
+    Facebook: 
+    Email: 
+- scope:
+    path: ''
+    type: topics
+  values:
+    permalink: "/topics/:title/"
+    layout: topic
+- scope:
+    path: ''
+    type: posts
+  values:
+    permalink: "/:title/"
+    layout: post
+    Image: 
+    Description: 
+    Person: 
+    Topics:
+    - 
+    Companies:
+    - 
+    Markets:
+    - 
+    Is Featured: 
+- scope:
+    path: ''
+    type: pages
+  values:
+    layout: page
+encoding: utf-8
+email: 
+description: Description
+exclude:
+- _import
+baseurl: 
+url: https://gomedici.com
+MEDICIURL: https://memberships.gomedici.com/
+twitter_username: 
+github_username: privenbark
+markdown: kramdown
+plugins:
+- jekyll-paginate
+- jekyll-time-to-read
+- jekyll-sitemap
+- jekyll-include-cache
+permalink: "/:title/"
+paginate: 12
+paginate_path: "/page:num/"
+facebook:
+  app_id: 1618146448477556

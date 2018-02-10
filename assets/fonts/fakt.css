@@ -1,0 +1,69 @@
+@font-face {
+  font-family: 'Fakt';
+  src: url('FaktPro-Hair.eot');
+  src: url('fakt/FaktPro-Hair.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-Hair.woff') format('woff'),
+       url('fakt/FaktPro-Hair.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  100;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('FaktPro-Thin');
+  src: url('fakt/FaktPro-Thin.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-Thin.woff') format('woff'),
+       url('fakt/FaktPro-Thin.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  200;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('FaktPro-Light.eot');
+  src: url('fakt/FaktPro-Light.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-Light.woff') format('woff'),
+       url('fakt/FaktPro-Light.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  300;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('fakt/FaktPro-Blond.eot');
+  src: url('fakt/FaktPro-Blond.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-Blond.woff') format('woff'),
+       url('fakt/FaktPro-Blond.ttf')  format('truetype');
+  font-style:   normal;
+  font-weight:  400;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('fakt/FaktPro-Normal.eot');
+  src: url('fakt/FaktPro-Normal.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-Normal.woff') format('woff'),
+       url('fakt/FaktPro-Normal.ttf')  format('truetype');
+  font-style: normal;
+  font-weight: 500;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('fakt/FaktPro-Medium.eot');
+  src: url('fakt/FaktPro-Medium.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-Medium.woff') format('woff'),
+       url('fakt/FaktPro-Medium.ttf')  format('truetype');
+  font-weight: 600;
+  font-style: normal;
+}
+
+@font-face {
+  font-family: 'Fakt';
+  src: url('fakt/FaktPro-SemiBold.eot');
+  src: url('fakt/FaktPro-SemiBold.eot?#iefix') format('embedded-opentype'),
+       url('fakt/FaktPro-SemiBold.woff') format('woff'),
+       url('fakt/FaktPro-SemiBold.ttf')  format('truetype');
+  font-weight: 700;
+  font-style: normal;
+}

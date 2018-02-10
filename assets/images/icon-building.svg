@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="16px" height="16px" viewBox="0 0 16 16" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 47.1 (45422) - http://www.bohemiancoding.com/sketch -->
+    <title>icon-building</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Symbols" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="nav" transform="translate(-31.000000, -301.000000)">
+            <rect id="Rectangle-4" fill="#F9FAFA" x="0" y="0" width="260" height="900"></rect>
+            <g id="Group-5" transform="translate(32.000000, 100.000000)" fill="#C93A26">
+                <g id="Group-12" transform="translate(0.000000, 203.000000)">
+                    <path d="M11.7611,10.8 L8.66586192,10.8 L8.66586192,9 C8.66586192,8.6688 8.38852859,8.4 8.0468143,8.4 L5.57062382,8.4 C5.22890954,8.4 4.95157621,8.6688 4.95157621,9 L4.95157621,10.8 L1.85633811,10.8 L1.85633811,1.2 L11.7611,1.2 L11.7611,10.8 Z M6.18967144,9.6 L7.42776668,9.6 L7.42776668,10.8 L6.18967144,10.8 L6.18967144,9.6 Z M12.3801476,0 L1.23729049,0 C0.895576205,0 0.618242872,0.2688 0.618242872,0.6 L0.618242872,11.4 C0.618242872,11.7312 0.895576205,12 1.23729049,12 L12.3801476,12 C12.7218619,12 12.9991953,11.7312 12.9991953,11.4 L12.9991953,0.6 C12.9991953,0.2688 12.7218619,0 12.3801476,0 L12.3801476,0 Z" id="Fill-2266"></path>
+                    <polygon id="Fill-2267" points="6.18985716 3 4.95176192 3 4.95176192 4.2 6.18985716 4.2"></polygon>
+                    <polygon id="Fill-2268" points="8.66604763 3 7.4279524 3 7.4279524 4.2 8.66604763 4.2"></polygon>
+                    <polygon id="Fill-2269" points="11.1422381 3 9.90414287 3 9.90414287 4.2 11.1422381 4.2"></polygon>
+                    <polygon id="Fill-2270" points="6.18985716 5.4 4.95176192 5.4 4.95176192 6.6 6.18985716 6.6"></polygon>
+                    <polygon id="Fill-2271" points="3.71366668 3 2.47557144 3 2.47557144 4.2 3.71366668 4.2"></polygon>
+                    <polygon id="Fill-2272" points="3.71366668 5.4 2.47557144 5.4 2.47557144 6.6 3.71366668 6.6"></polygon>
+                    <polygon id="Fill-2273" points="8.66604763 5.4 7.4279524 5.4 7.4279524 6.6 8.66604763 6.6"></polygon>
+                    <polygon id="Fill-2274" points="11.1422381 5.4 9.90414287 5.4 9.90414287 6.6 11.1422381 6.6"></polygon>
+                </g>
+            </g>
+            <g id="Group" transform="translate(10.000000, 93.000000)"></g>
+            <g id="Group-4" transform="translate(10.000000, 274.750000)" font-weight="400" font-size="14" font-family="FaktPro-Medium, Fakt Pro" letter-spacing="-0.043555554" fill="#4A4A4A">
+                <g id="nav" transform="translate(0.000000, 22.500000)">
+                    <text id="Link">
+                        <tspan x="46" y="16.5">Startups</tspan>
+                    </text>
+                </g>
+            </g>
+        </g>
+        <g id="Group-5" transform="translate(1.000000, -200.000000)"></g>
+    </g>
+</svg>

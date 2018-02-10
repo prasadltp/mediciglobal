@@ -1,0 +1,91 @@
+---
+layout: default
+class: home
+---
+
+{% assign page_num = paginator.page %}
+	
+{% if page_num == 1 %}
+
+	<section class="posts grid">
+  	<div class="featured first">
+  	  {% assign featured = site.posts | where: "Is Featured" , "true" %}
+  		{% for post in featured limit:1 %}
+  		  {% include post.html words="50" isFirst = "true"%}
+  		{% endfor %}
+  	</div>
+  	
+  	{% for post in paginator.posts limit:4 %}
+  	  {% include post.html words="25" %}
+  	{% endfor %}
+  	
+  	{% for post in featured limit:1 offset:1 %}
+  	<div class="featured inline">
+  	  {% include post.html words="50" %}
+  	</div>
+  	{% endfor %}
+  	
+  	{% for post in paginator.posts limit:4 offset:4 %}
+  	  {% include post.html words="25" %}
+  	{% endfor %}
+  	{% include pagination.html %}
+  	
+  </section>
+  
+  {% include_cached sidebar.html %}
+  
+{% else %}
+  
+<div class="post-featured">
+	{% for post in paginator.posts limit:2 %}
+    {% if forloop.first == true %}<section class="posts grid">{% endif %}
+    	{% include post.html words="50" %}
+    {% if forloop.last == true %}</section>{% endif %}
+    {% endfor %}
+</div>
+
+<div class="post-wrap">
+  <section class="posts">
+  
+    <div class="grid">
+    	{% for post in paginator.posts offset:2 %}
+  	    {% include post.html words="50" %}
+    	{% endfor %}
+    </div>
+    
+    {% include pagination.html %}
+  
+  </section>
+  {% include_cached sidebar.html %}
+</div>
+
+{% endif %}
+<!--FINTECH  MODAL-->
+<div class="modal-wrapp" id="Fintech-Modal-Landing">
+        <div class="modal-dialoge">     
+                <div class="m-header">
+                    <div class="m-logo"><img src="/assets/images/logo-wtag.svg" alt=""></div>
+                    <div class="tag-line"><img src="/assets/images/ltp-tagline.jpg" alt=""></div>
+                    <a href="#" class="close-btn js-modal-close">x</a>
+                </div>
+            <div class="modal-content">
+                <span class="tag">FREE EXCLUSIVE NEW REPORT</span>
+                <div class="clear"></div>
+                <div class="left-col">
+                    <h1>How will you benefit from the top 10 insights that will shape the Global FinTech Industry in 2018?</h1>
+                <p class="normal-font">Our summary report has compiled the most 
+        important trends in Payments, Lending, 
+        Blockchain, Remittance, InsurTech and more. </p>
+                <p>Click below to download a FREE copy of our 2018 Global State of FinTech Report Executive Summary. </p>
+                </div>
+                <div class="right-col">
+                    <img src="/assets/images/report_image.png" alt="">
+                </div>
+                <a href="/state-of-fintech-2018/" class="m-btn">Yes! Please send me the FREE Report!</a>
+                <div class="clear"></div>
+                <span class="note">Plus, sign me up for daily MEDICI Insights to keep me informed with curated research and global industry analysis!</span>
+            </div>  
+            </div>
+        
+    </div>    
+    <!--END FINTECH MODAL-->

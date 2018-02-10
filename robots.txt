@@ -1,0 +1,5 @@
+
+User-agent: *
+Disallow: 
+
+Sitemap: https://gomedici.com/sitemap.xml

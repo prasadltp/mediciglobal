@@ -1,0 +1,25 @@
+{% assign topic = site.topics | where: 'title', post.Topics | first %}
+{% assign author = site.person | where: 'title', post.Person | first %}
+
+<article class="{% if author['Is MEDICI Team?'] == true %}team {% endif %}post {% if collection_url == 'topics' %} scrollable-data {% endif %}">
+	{% if include.isFirst == "true" %}
+	<figure class="image">
+		<div class="image" style="background-image: url('/uploads/launchimage.jpg');">{% if include.isFirst == "true" %}<a href="{{site.MEDICIURL}}" target="_blank"></a>{% endif%}</div>
+	</figure>
+	{% else %}
+	<figure class="image">
+		{% if post.Image %}
+			<div class="image" style="background-image: url('{{post.Image}}'),url('/uploads/MEDICI_default.jpg');"></div>
+		{% else %}
+			<div class="image" style="background-image: url('/uploads/MEDICI_default.jpg');background-position: right center;"></div>		
+		{% endif %}
+	</figure>
+	{% endif %}
+	<section class="body">
+		<h4><a href="{{ topic.url }}">{{ post.Topics | first }}</a></h4>
+  	<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+  	<p class="byline">by <a href="{{author.url}}">{{author.title}}</a> &middot; {{post.date | date: "%B %e, %Y"}}</p>
+  	<p>{{ post.content | markdownify | strip_html | truncatewords: include.words }}</p>
+  	<p class="more"><a href="{{post.url}}">Read More</a> &middot;{% include plugin-readtime.html %}</p>
+	</section>
+</article>

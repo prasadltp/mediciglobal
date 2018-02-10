@@ -1,0 +1,144 @@
+---
+layout: default
+class: collection
+---
+
+{% assign pageurl_array = page.url | split: "/" %}
+{% assign path = pageurl_array[0] %}
+{% assign collection_url = pageurl_array[1] %}
+{% assign collection_name = page.title %}
+
+<header>
+  
+  {% if page.image %}
+  <figure class="image">
+  	<div class="image" style="background-image: url({{page.image}});"></div>
+  </figure>
+  {% endif %}
+
+  {% if collection_url == "person" %}
+  <figure class="image">
+  	<div class="image" style="background-image: url({{page.Image}}); width:150px;height:150px;background-size: cover;background-repeat: no-repeat;background-position: center center;display: block;margin-bottom: 10px;"></div>
+  </figure>
+  {% endif %}
+  
+  <h1 class="person_share">{{ page.title }}</h1>
+  <ul class="person_share share">
+  {% if page.Twitter %}
+  <li class="twitter"><a href="https://twitter.com/{{ page.Twitter }}" target="_blank"><i class="entypo-twitter"></i>Twitter</a></li>
+  {% endif%}
+  {% if page.LinkedIn %}
+  <li class="linkedin"><a href="{{ page.LinkedIn }}" target="_blank"><i class="entypo-linkedin"></i>LinkedIn</a></li>
+  {% endif%}
+  {% if page.Email %}
+  <li class="email"><a href="mailto:{{ page.Email }}"><i class="entypo-mail"></i>Email</a></li>
+  {% endif%}
+  </ul>
+  {{ page.content | markdownify }}
+  
+  {% if page.action %}<a href="{{ page.action-url }}" class="btn">{{ page.action }}</a>{% endif %}
+  
+</header>
+
+{% include columns.html %}
+
+<div class="post-featured">
+{% if collection_url == "topics" %}
+  {% assign sorted = site.posts | where: 'Topics', collection_name %}
+  {% for post in sorted limit:2 %}
+    {% if forloop.first == true %}<section class="posts grid">{% endif %}
+      {% include post.html words="25" %}
+    {% if forloop.last == true %}</section>{% endif %}
+  {% endfor %}
+{% elsif collection_url == "research" %}
+  {% for post in site.research limit:2 %}
+    {% if forloop.first == true %}<section class="posts grid">{% endif %}
+      {% include post-research.html words="25" %}
+    {% if forloop.last == true %}</section>{% endif %}
+  {% endfor %}
+{% elsif collection_url == "events" %}  
+  {% assign events = site.events | where: "Is Partner Event?", "true" %}
+  {% for post in events limit:2 %}
+  {% if forloop.first == true %}<section class="posts grid">{% endif %}
+    {% include post-event.html %}
+  {% if forloop.last == true %}</section>{% endif %}
+  {% endfor %}
+{% endif %}
+</div>
+
+<div class="post-wrap">
+<section class="posts">
+
+{% if collection_url == "person" %}  
+<div class="grid">  
+  {% assign posts = site.posts | where: 'Person', page.title %}
+  {% for post in posts %}
+    {% include post.html words="25" %}
+  {% endfor %}
+</div>
+{% elsif collection_url == "companies" %}
+
+{% for post in site.companies %}
+  {% include post-company.html %}
+{% endfor %}
+
+
+{% elsif collection_url == "events" %}
+<div class="grid">
+  {% assign current-date = site.time | date: '%s' %}
+  {% assign sorted = site[collection_url] | sort: 'Start Date' %}
+  {% for post in sorted %}
+    {% if forloop.first %}<h2 class="header">Upcoming Events</h2>{% endif %}
+    {% assign postStartDate = post['Start Date'] | date: '%s' %}
+    {% if postStartDate >= current-date %}
+      {% include post-event.html %}
+    {% endif %}
+  {% endfor %}
+  {% for post in sorted %}
+    {% if forloop.first %}<h2 class="header">Past Events</h2>{% endif %}
+    {% assign postStartDate = post['Start Date'] | date: '%s' %}
+    {% if postStartDate < current-date %}
+      {% include post-event.html %}
+    {% endif %}
+  {% endfor %}
+</div>
+{% elsif collection_url == "programs" %}
+
+{% for post in site.programs %}
+  {% include post-program.html %}
+{% endfor %}
+
+{% elsif collection_url == "research" %}
+  {% for post in site.research offset:2 %}
+    {% include post-research.html words="25" %}
+  {% endfor %}
+
+{% elsif collection_name == "Topics" %}
+<div class="grid">
+  {% assign sorted = site.topics | sort: 'title' %}
+  {% for post in sorted %}
+  
+    <article class="post">
+    	<figure class="image">
+    		<div class="image" style="background-image: url({{post.Image}});"></div>
+    	</figure>
+    	<section class="body">
+      	<h1><a href="{{post.url}}">{{post.title}}</a></h1>
+      	<p>{{ post.excerpt }}</p>
+    	</section>
+    </article>
+  
+  {% endfor %}
+</div>
+{% elsif collection_url == "topics" %}
+<div class="grid">
+  {% assign sorted = site.posts | where: 'Topics', collection_name %}
+  {% for post in sorted offset:2 %}
+    {% include post.html words="25" %}
+  {% endfor %}
+</div>
+{% endif %}
+
+</section>
+{% include_cached sidebar.html %}
+</div>

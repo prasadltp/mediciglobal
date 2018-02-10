@@ -1,0 +1,114 @@
+---
+layout: default
+class: article
+---
+
+<article class="page">
+  
+  <figure class="image">
+  	<div class="image" style="background-image: url({{page.Image}});"></div>
+  </figure>
+  
+  <header class="post-header">
+    <h1>{{ page.title | escape }}</h1>
+  </header>
+
+  <section class="body">
+    {{ content }}
+  </section>
+  <a href="javascript:void(0);" class="open-sidebar"></a>
+  <aside class="sidebar" id="mc_embed_signup">
+      {% if page.title =='State of FinTech 2018' %}
+      <form action="https://letstalkpayments.us7.list-manage.com/subscribe/post?u=bc57d9187dbf177fa07614fbf&amp;id=c628c52a21" method="POST" id="mc-embedded-subscribe-form" name="mc-embedded-subscribe-form" class="validate" target="_blank" novalidate>
+        <div class="right-content">
+            <img src="/assets/images/Group.png" alt="">
+            <div class="fintech-form-col">
+            <div class="input-col mc-field-group">
+                <span class="red">All Fields Are Mandatory.</span>
+            </div>
+            <div class="input-col mc-field-group">
+                    <input type="text" placeholder="First Name" name="FNAME" class="required" id="mce-FNAME">
+            </div>
+            <div class="input-col mc-field-group">
+                    <input type="text" placeholder="Last Name" name="LNAME" class="required" id="mce-LNAME">
+            </div>
+            <div class="input-col mc-field-group">
+                    <input type="text" placeholder="Company" name="MMERGE3" class="required" id="mce-MMERGE3">
+            </div>
+            <div class="input-col mc-field-group">
+                    <input type="email" placeholder="Email Address" name="EMAIL" class="required email" id="mce-EMAIL">
+            </div>
+            <div class="input-col mc-field-group">
+            <select name="MMERGE6" class="required target" id="mce-MMERGE6">
+              <option value="">Please select role</option>
+              <option value="Investor">Investor</option>
+              <option value="StartUp">StartUp</option>
+              <option value="Financial Institution">Financial
+                Institution</option>
+              <option value="Media">Media</option>
+              <option value="Blogger">Blogger</option>
+              <option value="Influencer">Influencer</option>
+              <option value="Analyst">Analyst</option>
+              <option value="Government">Government</option>
+              <option value="Regulator">Regulator</option>
+              <option value="Non-profit">Non-profit</option>
+              <option value="Service provider">Service provider</option>
+              <option value="Other">Other</option>
+            </select>
+            </div>
+            <div class="check-box" >
+                <input type="checkbox" checked value="1" name="group[9][1]" id="mce-group[9]-9-0">
+                <label for="mce-group[9]-9-0">Yes, I don’t want to miss out . Please also send 
+        MEDICI insights directly to my email inbox. </label>
+            </div>
+            <div class="form-btn-col">
+                <input type="submit" name="subscribe" value="Download" id="mc-embedded-subscribe">
+            </div>
+           <div style="clear: both;"></div>
+        </div>
+        <div id="mce-responses" class="clear">
+                <div class="response" id="mce-error-response" style="display:none"></div>
+                <div class="response" id="mce-success-response" style="display:none"></div>
+        </div> 
+        </form>
+        
+      {%endif%}
+  </aside>
+  
+  {% for section in page.Section %}
+  {% if forloop.first == true %}<div class="extended">{% endif %}
+    <section>
+    	{% if section.Title %}<h2>{{ section.Title }}</h2>{% endif %}
+    	{% if section.Image %}
+    	<figure class="image">
+    		<div class="image" style="background-image: url({{section.Image}});"></div>
+    	</figure>
+    	{% endif %}
+    	{% if section.Text %}
+    	{{ section.Text | markdownify }}
+    	{% endif %}
+    </section>
+  {% if forloop.last == true %}</div>{% endif %}
+  {% endfor %}
+
+  {% include columns.html %}
+</article>
+
+<script src="{{ "/assets/scripts" | prepend: site.baseurl }}/mc-validate.js"></script>
+<script type='text/javascript'>
+(function($) {
+    window.fnames = new Array(); 
+    window.ftypes = new Array();
+    fnames[1]='FNAME';
+    ftypes[1]='text';
+    fnames[2]='LNAME';
+    ftypes[2]='text';
+    fnames[3]='MMERGE3';
+    ftypes[3]='text';
+    fnames[0]='EMAIL';
+    ftypes[0]='email';
+    fnames[6]='MMERGE6';
+    ftypes[6]='dropdown';}
+    (jQuery));var $mcj = jQuery.noConflict(true);
+</script>
+<!--End mc_embed_signup-->

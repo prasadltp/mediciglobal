@@ -1,0 +1,32 @@
+<article class="post{% if forloop.first == true %} first{% endif %}">
+	{% assign author = site.people | where: 'title', post.author | first %}	
+	{% if author %}
+	  <h4 class="meta"><i class="avatar" style="background-image:url({{ author.Image }});"></i> <a href="{{ author.url }}" class="author">{{ post.author }}</a> added an article in <a href="/topics/{{ post.tags | first | downcase }}" class="tag">{{ post.tags | first }}</a></h4>
+	{% else %}
+	  <h4 class="meta"><i class="avatar" style="background-image:url({{ author.Image }});"></i> {{ post.author }} added an article in <a href="/topics/{{ post.tags | first | downcase }}" class="tag">{{ post.tags | first }}</a></h4>
+	{% endif %}
+  <figure class="image">
+    <div class="img" style="background-image: url('{{ "/assets/images/" | relative_url }}{{ post.image }}')">&nbsp;</div>
+    <figcaption></figcaption>
+  </figure>
+  <section class="content">
+    <header>
+<!--      <h4>{{ post.tags | first }}</h4>-->
+      <h1><a href="{{ post.url | relative_url }}">{{ post.title }}</a></h1>
+    </header>
+    <section class="body">
+      {{ post.excerpt }}
+      <p class="more"><a href="{{ post.url | relative_url }}">Read more</a></p>
+    </section>
+  </section>
+  <footer>
+  	<div class="inner">
+	  	<h4>Resources</h4>
+	  	<ul>
+	  		<li>Cursus Malesuada</li>
+	  		<li>Quam Mollis</li>
+	  		<li>Sit Dapibus</li>
+	  	</ul>
+  	</div>
+  </footer>
+</article>

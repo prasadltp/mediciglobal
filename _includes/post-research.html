@@ -1,0 +1,12 @@
+{% assign topic = site.topics | where: 'title', post.Topics | first %}
+<article class="post">
+	<figure class="image">
+		<div class="image" style="background-image: url({{post.Image}});"></div>
+	</figure>
+	<section class="body">
+		<h4><a href="{{ topic.url }}">{{ post.Topics | first }}</a></h4>
+  	<h1><a href="{% if post.URL %}{{post.URL}}{% else %}{{post.url}}{% endif %}">{{post.title}}</a></h1>
+  	<p>{{ post.content | markdownify | strip_html | truncatewords: include.words }}</p>
+  	<p class="more"><a href="{{post.url}}">Read More</a> &middot; 	{% include plugin-readtime.html %}</p>
+	</section>
+</article>

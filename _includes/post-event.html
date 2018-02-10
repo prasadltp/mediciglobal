@@ -1,0 +1,11 @@
+{% assign topic = site.topics | where: 'title', post.Topics | first %}
+<article class="post event">
+  <figure class="image" style="background-image: url('{{ post.Image }}')"></figure>
+  <section class="body">
+  	<h4><a href="{{ topic.url }}">{{ post.Topics | first }}</a></h4>
+  	<h1><a href="{{post.URL}}" target="_blank">{{post.title}}</a></h1>
+  	<p>{{post.Location}}</p>
+		<p class="byline">{{post.['Start Date'] | date: "%B %e, %Y" }}</p>
+  	<p>{{ post.excerpt }}</p>
+  </section>
+</article>

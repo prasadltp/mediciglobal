@@ -1,0 +1,15 @@
+{% if page.Columns %}
+{% for column in page.Columns %}
+{% if forloop.first == true %}<section class="columns cols-{{ forloop.length }}">{% endif %}
+	<div class="column">
+		  {% if column.Image %}
+		  <figure class="image">
+		  	<div class="image" style="background-image: url({{column.Image}});"></div>
+		  </figure>
+		  {% endif %}
+		  {% if column.Title %}<h2>{{ column.Title }}</h2>{% endif %}
+		  {% if column.Text %}{{ column.Text | markdownify }}{% endif %}
+	</div>
+{% if forloop.last == true %}</section>{% endif %}
+{% endfor %}
+{% endif %}
