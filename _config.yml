@@ -145,8 +145,8 @@ description: Description
 exclude:
 - _import
 baseurl: 
-url: https://gomedici.com
-MEDICIURL: https://memberships.gomedici.com/
+url: 
+MEDICIURL: 
 twitter_username: 
 github_username: privenbark
 markdown: kramdown
