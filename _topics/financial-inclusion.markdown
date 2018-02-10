@@ -1,6 +1,6 @@
 ---
 title: Financial Inclusion
-date: 2017-12-26 19:52:00 Z
+date: 2017-12-27 01:22:00 +05:30
 position: 6
 Image: "/uploads/inclusion1.jpg"
 ---

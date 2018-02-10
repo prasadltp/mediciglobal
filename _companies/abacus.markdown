@@ -1,6 +1,6 @@
 ---
 title: Abacus
-date: 2017-12-06 17:52:00 Z
+date: 2017-12-06 23:22:00 +05:30
 tags:
 - Personal Finance Management
 Image: https://s3-us-west-2.amazonaws.com/medici-prod/companies/images/000/000/007/original/abacus.com.png?1486994336

@@ -1,6 +1,6 @@
 ---
 title: Disruptive Trends in InsurTech - Current and Beyond
-date: 2017-10-05 16:00:00 Z
+date: 2017-10-05 21:30:00 +05:30
 Topics:
 - InsurTech
 Image: 

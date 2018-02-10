@@ -1,6 +1,6 @@
 ---
 title: InvestTech
-date: 2017-10-19 04:42:00 Z
+date: 2017-10-19 10:12:00 +05:30
 position: 8
 Image: "/uploads/investment.jpg"
 ---

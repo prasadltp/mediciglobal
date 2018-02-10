@@ -1,11 +1,11 @@
 ---
 title: Digital ID Verification – Competitive Analysis of Key Players
-date: 2017-11-07 05:27:00 Z
+date: 2017-11-07 10:57:00 +05:30
 Topics:
 - Authentication & Security
 - Enabling Technologies
 Image: "/uploads/Digital%20ID_Cover_Image.png"
-Published Date: 0003-11-01 00:00:00 Z
+Published Date: 0003-11-01 05:53:28 +05:53
 Price: 0
 Status: " Available for download"
 ---

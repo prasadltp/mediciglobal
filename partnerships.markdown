@@ -1,6 +1,6 @@
 ---
 title: Partnerships
-date: 2017-12-03 19:03:00 Z
+date: 2017-12-04 00:33:00 +05:30
 position: 12
 Image: "/uploads/partnerships_2.jpg"
 Columns:

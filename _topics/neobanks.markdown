@@ -1,6 +1,6 @@
 ---
 title: Neobanks
-date: 2017-10-25 04:06:00 Z
+date: 2017-10-25 09:36:00 +05:30
 published: false
 position: 10
 Image: "/uploads/neobank.jpg"

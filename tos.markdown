@@ -1,6 +1,6 @@
 ---
 title: Terms of Use
-date: 2017-12-13 02:57:00 Z
+date: 2017-12-13 08:27:00 +05:30
 position: 16
 Image: "/uploads/tou_small.jpg"
 ---

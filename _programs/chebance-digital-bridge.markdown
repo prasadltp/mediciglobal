@@ -1,6 +1,6 @@
 ---
 title: Chebance! Digital Bridge
-date: 2017-10-17 18:54:00 Z
+date: 2017-10-18 00:24:00 +05:30
 twitter: "@cheBanca!"
 logo: "/uploads/chebanco_logo.png"
 Participating Companies:

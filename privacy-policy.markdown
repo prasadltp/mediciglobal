@@ -1,6 +1,6 @@
 ---
 title: Privacy Policy
-date: 2017-12-13 02:59:00 Z
+date: 2017-12-13 08:29:00 +05:30
 position: 17
 Image: "/uploads/privacy.jpg"
 ---

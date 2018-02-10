@@ -1,6 +1,6 @@
 ---
 title: Blockchain & Cryptocurrency Patent Overview (Sept 2017)
-date: 2017-10-02 16:00:00 Z
+date: 2017-10-02 21:30:00 +05:30
 Topics:
 - Blockchain
 - Cryptocurrency

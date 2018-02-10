@@ -1,6 +1,6 @@
 ---
 title: Retail Banking
-date: 2017-10-19 04:58:00 Z
+date: 2017-10-19 10:28:00 +05:30
 position: 12
 Image: "/uploads/banking.jpg"
 ---

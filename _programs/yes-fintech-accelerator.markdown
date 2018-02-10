@@ -1,14 +1,14 @@
 ---
 title: YES FINTECH Accelerator
-date: 2017-10-17 18:46:00 Z
+date: 2017-10-18 00:16:00 +05:30
 tags:
 - programs
 - lending
 - digital payments
 image: https://s3-us-west-2.amazonaws.com/medici-prod/home/medici/releases/20170911093459/public/ckeditor_assets/pictures/214/content_30252419-45d82b74-9627-11e7-8a30-06bd34204aa3.jpg
 status: open
-start-date: 2017-10-17 00:00:00 Z
-end-date: 2017-10-22 00:00:00 Z
+start-date: 2017-10-17 05:30:00 +05:30
+end-date: 2017-10-22 05:30:00 +05:30
 website: http://www.yesfintech.com/
 application link: https://medici.letstalkpayments.com/users/sign_in
 ---

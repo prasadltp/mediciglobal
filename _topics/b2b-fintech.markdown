@@ -1,6 +1,6 @@
 ---
 title: B2B FinTech
-date: 2017-10-25 04:05:00 Z
+date: 2017-10-25 09:35:00 +05:30
 published: false
 position: 1
 Image: "/uploads/b2b.jpg"
